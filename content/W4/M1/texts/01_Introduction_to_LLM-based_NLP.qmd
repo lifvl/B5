@@ -94,6 +94,7 @@ Automatically converting text from one language into another. This is a challeng
 - **Search engines** crawl, index, and find documents based on user queries.
 - **Chat models** uses Retriveal to Augment their Generation (RAG) to provide up-to-date and factual answers.
 
+See: [`intfloat` (Liang Wang)'s collections](https://huggingface.co/intfloat) for **embedding** and **reranker** models.
 
 ## Named-entity Recognition (NER)
 
@@ -168,20 +169,16 @@ Label: Spam.
 
 Example: [QARI-OCR](https://huggingface.co/NAMAA-Space/Qari-OCR-v0.3-VL-2B-Instruct) Structural Arabic Document Understanding.
 
-## Model Hub
 
-The [Model Hub](https://huggingface.co/models) is where the members of the Hugging Face community can host all of their model checkpoints for simple storage, discovery, and sharing.
+## Transformers Library
 
-Cross-modality Tasks:
+Transformers is a PyTorch-first library. It provides models that are faithful to their papers, easy to use, and easy to hack.
 
-- **Speech**:
-  - speech-to-text: transcribe audio
-  - text-to-speech: generate voice from text
-  - text+speech-to-speech: modiffy a given voice
-- **Image**:
-  - image-to-text: describe an image or read text in an image
-  - text-to-image: draw an image
-  - text+image-to-image: modify an image
+This library is for:
+
+- Researchers and educators exploring or extending model architectures.
+- Practitioners fine-tuning, evaluating, or serving models.
+- Engineers who want a pretrained model that “just works” with a predictable API.
 
 
 ## Models Timeline
@@ -191,6 +188,12 @@ The [Models Timeline](https://huggingface.co/spaces/yonigozlan/Transformers-Time
 Use the filters to narrow models by modality or task. Set custom date ranges to focus on models added during specific periods. Click a model card to see its capabilities, supported tasks, and documentation.
 
 ![](../assets/timeline.png)
+
+## Tasks
+
+[Tasks](https://huggingface.co/models), or pipeline types, describe the “shape” of each model’s API (inputs and outputs) and are used to determine which Inference API and widget we want to display for any given model.
+
+![](../assets/tasks.png)
 
 
 ## Transfer Learning
